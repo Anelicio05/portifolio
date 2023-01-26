@@ -1,0 +1,47 @@
+.sobre{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10rem;
+    background-color: var(--preto);
+}
+
+.sobre__status{
+    max-width: 60%;
+    color: var(--branco);
+    font-family: var( --fonte-secundaria);
+}
+
+.sobre__mim h2{
+    color: var(--laranja);
+    font-family: var(--titulo);
+    font-size: 40px;
+}
+
+.sobre__info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.sobre__lista, li{
+    display: flex;
+    color: var(--branco);
+    align-items: center;
+    font-size: 16px;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.sobre__mim p{
+    font-size: 20px;
+    text-align: left;
+}
+
+.sobre__logo{
+    width: 420px;
+}
+
+.sobre__lista img{
+    width: 40px;
+}

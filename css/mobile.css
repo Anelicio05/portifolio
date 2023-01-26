@@ -1,0 +1,22 @@
+@media only screen and (min-width: 320px) and (max-width: 1200px) {
+    .cabecalho, .sobre, .sobre__lista, .status__botoes{
+        flex-direction: column;
+        gap: 20px;
+        padding: 1rem;
+    }
+    .cabecalho__lista{
+        right: 5%;
+    }
+    
+    .sobre__mim p, h2{
+        text-align: center;
+        font-size: 18px;
+    }
+    .sobre__info h3, .sobre__info p{
+        text-align: center;
+        font-size: 13px;
+    }
+    .sobre__logo{
+        width: 300px;
+    }
+}
