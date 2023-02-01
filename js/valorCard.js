@@ -31,4 +31,13 @@ const cards = [
     }
 ]
 
-export default cards
+const projetos =[
+    {
+        img: "",
+        titulo: "",
+        gitHub: "",
+        link: "",
+    }
+]
+
+export {cards, projetos} 

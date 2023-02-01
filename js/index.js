@@ -1,4 +1,4 @@
-import cards from "./valorCard.js"
+import {cards} from "./valorCard.js"
 const b = document.querySelectorAll("#lista li")
 
 b.forEach(element => {
@@ -20,23 +20,12 @@ function scrollId(e) {
 }
 
 function scrollcolor() {
-    const posicaoCorreta = document.documentElement.scrollTop
-
-    if (posicaoCorreta >= 400 && posicaoCorreta <= 700) {
-        document.querySelector("[data-sobre]").style.background = "#f5ad08"
-    } else {
-        document.querySelector("[data-sobre]").style.background = "#383838"
-    }
-    if (posicaoCorreta >= 800) {
-        document.querySelector("[data-tecnologia]").style.background = "#f5ad08"
-    } else {
-        document.querySelector("[data-tecnologia]").style.background = "#383838"
-    }
-    if (posicaoCorreta <= 400) {
-        document.querySelector("[data-cabecalho]").style.background = "#f5ad08"
-    } else {
-        document.querySelector("[data-cabecalho]").style.background = "#383838"
-    }
+    const posicaoCorreta = document.documentElement.scrollTop.toFixed(0)
+    
+    posicaoCorreta <= 400 ?   document.querySelector("[data-cabecalho]").style.background = "#f5ad08" : document.querySelector("[data-cabecalho]").style.background = "#383838"
+    posicaoCorreta <= 1300 ?  document.querySelector("[data-sobre]").style.background = "#f5ad08" :  document.querySelector("[data-sobre]").style.background = "#383838"
+    posicaoCorreta >= 1450 && posicaoCorreta <= 2300 ?  document.querySelector("[data-tecnologia]").style.background = "#f5ad08" : document.querySelector("[data-tecnologia]").style.background = "#383838"
+         
 }
 
 function criaCard(){

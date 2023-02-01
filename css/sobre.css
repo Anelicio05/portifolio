@@ -7,7 +7,7 @@
 }
 
 .sobre__status{
-    max-width: 60%;
+    max-width: 50%;
     color: var(--branco);
     font-family: var( --fonte-secundaria);
 }

@@ -1,0 +1,37 @@
+#projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#projetos h1{
+    font-family: var(--titulo);
+    color: var(--laranja);
+    font-size: 80px;
+}
+
+#projetos__lista{
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    flex-wrap: wrap;
+    max-width: 80%;
+}
+
+#projetos__lista li{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    background-color: var(--cinza);
+}
+
+.projeto__img{
+    width: 300px;
+}
+
+.logo__projetos{
+    width: 20px;
+}
