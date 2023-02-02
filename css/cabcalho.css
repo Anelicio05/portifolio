@@ -68,6 +68,8 @@
 }
 
 .status__botoes button{
+    border: none;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     padding: 5px 26px;

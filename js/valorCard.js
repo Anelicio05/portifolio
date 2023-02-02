@@ -6,7 +6,7 @@ const cards = [
     },
     {
         titulo: "CSS",
-        img: "img/css-svgrepo-com.svg",
+        img: "img/css-svgrepo-com (2).svg",
         valor: "60%"
     },
     {

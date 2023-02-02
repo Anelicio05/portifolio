@@ -2,4 +2,13 @@ footer{
     margin-top: 5rem;
     height: 120px;
     background-color: var(--cinza);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--fonte-secundaria);
+}
+
+footer span, a{
+    color: white;
 }
