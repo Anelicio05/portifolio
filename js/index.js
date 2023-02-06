@@ -10,7 +10,6 @@ window.addEventListener("scroll", scrollcolor)
 function scrollId(e) {
     const id = e.target.alt
     const to = document.querySelector(`#${id}`).offsetTop
-    console.log(to)
 
     window.scroll({
         top: to,
@@ -21,10 +20,14 @@ function scrollId(e) {
 
 function scrollcolor() {
     const posicaoCorreta = document.documentElement.scrollTop.toFixed(0)
+    const sobre = document.getElementById("sobre").offsetTop
+    const tecnologia = document.getElementById("tecnologias").offsetTop
+    const projeto = document.getElementById("projetos").offsetTop
     
-    posicaoCorreta <= 400 ?   document.querySelector("[data-cabecalho]").style.background = "#f5ad08" : document.querySelector("[data-cabecalho]").style.background = "#383838"
-    posicaoCorreta <= 1300 ?  document.querySelector("[data-sobre]").style.background = "#f5ad08" :  document.querySelector("[data-sobre]").style.background = "#383838"
-    posicaoCorreta >= 1450 && posicaoCorreta <= 2300 ?  document.querySelector("[data-tecnologia]").style.background = "#f5ad08" : document.querySelector("[data-tecnologia]").style.background = "#383838"
+    posicaoCorreta < sobre ?   document.querySelector("[data-cabecalho]").style.background = "#f5ad08" : document.querySelector("[data-cabecalho]").style.background = "#383838"
+    posicaoCorreta >= sobre && posicaoCorreta < tecnologia ?  document.querySelector("[data-sobre]").style.background = "#f5ad08" :  document.querySelector("[data-sobre]").style.background = "#383838"
+    posicaoCorreta >= tecnologia && posicaoCorreta < projeto ?  document.querySelector("[data-tecnologia]").style.background = "#f5ad08" : document.querySelector("[data-tecnologia]").style.background = "#383838"
+    posicaoCorreta >= projeto ? document.querySelector("[data-projeto]").style.background = "#f5ad08" : document.querySelector("[data-projeto]").style.background = "#383838"
          
 }
 
